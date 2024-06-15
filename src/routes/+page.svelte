@@ -3,6 +3,8 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import { Button } from "$lib/components/ui/button";
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -27,6 +29,11 @@
 	</h2>
 
 	<Counter />
+	<ul>
+		{#each data.countries as country}
+		<li>{country.name}</li>
+		{/each}
+	</ul>
 </section>
 
 <style>

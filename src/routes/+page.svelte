@@ -11,6 +11,7 @@
 </svelte:head>
 
 <section>
+
 	<h1>
 		<span class="welcome">
 			<picture>
@@ -19,15 +20,13 @@
 			</picture>
 		</span>
 
-		to your new<br />RSVP app
+		to your new<br>RSVP app
 	</h1>
-
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 
 	<Counter />
-	<Button>Click me</Button>
 </section>
 
 <style>

@@ -4,38 +4,183 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
+    /* Colors */
+    --sample-topweddingdayjp-nero: #ffffff;
+    --sample-topweddingdayjp-spring-wood: #f7f7f0;
+    --sample-topweddingdayjp-black-30percent: rgba(0, 0, 0, 0.30);
+    --sample-topweddingdayjp-nero-02percent: rgba(255, 255, 255, 0.00);
+    --sample-topweddingdayjp-nero-50percent: rgba(255, 255, 255, 0.50);
+    --sample-topweddingdayjp-corn: #d8c501;
+    --sample-topweddingdayjp-loblolly: #b8c3c9;
+    --sample-topweddingdayjp-nero-70percent: rgba(255, 255, 255, 0.70);
+    --sample-topweddingdayjp-emperor: #505050;
+    --sample-topweddingdayjp-linear-nero-spring-wood: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%,rgba(247, 247, 240, 1.00) 100%);
+    --sample-topweddingdayjp-linear-spring-wood-bone: linear-gradient(180deg, rgba(247, 247, 240, 1.00) 0%,rgba(235, 214, 202, 1.00) 100%);
+    --sample-topweddingdayjp-linear-chalky-tonys-pink: linear-gradient(132.68deg, rgba(239, 213, 158, 1.00) 0%,rgba(226, 152, 134, 1.00) 100%);
+    --sample-topweddingdayjp-alto: #dddddd;
+    --sample-topweddingdayjp-gray: #808080;
+    --sample-topweddingdayjp-westar: #e5e3df;
+    --sample-topweddingdayjp-black: #000000;
+    --sample-topweddingdayjp-royal-blue: #1a73e8;
+    --sample-topweddingdayjp-dove-gray: #666666;
+    --sample-topweddingdayjp-mercury: #e6e6e6;
+    --sample-topweddingdayjp-cornflower-blue: #4285f4;
+    --sample-topweddingdayjp-cinnabar: #e94235;
+    --sample-topweddingdayjp-selective-yellow: #fabb05;
+    --sample-topweddingdayjp-chateau-green: #34a853;
+    --sample-topweddingdayjp-wild-sand: #f5f5f5;
+    --sample-topweddingdayjp-cafe-royale: #65540b;
+    --sample-topweddingdayjp-linear-chalky-tonys-pink: linear-gradient(100.17deg, rgba(239, 213, 158, 1.00) 0%,rgba(226, 152, 134, 1.00) 100%);
+    --sample-topweddingdayjp-bone: #ebd6ca;
+    --sample-topweddingdayjp-linear-spring-wood-bone: linear-gradient(180deg, rgba(247, 247, 240, 1.00) 0%,rgba(235, 214, 202, 1.00) 100%);
+    --sample-topweddingdayjp-linear-spring-wood-bone: linear-gradient(180deg, rgba(247, 247, 240, 1.00) 0%,rgba(235, 214, 202, 1.00) 100%);
+    --sample-topweddingdayjp-linear-spring-wood-bone: linear-gradient(180deg, rgba(247, 247, 240, 1.00) 0%,rgba(235, 214, 202, 1.00) 100%);
+    --sample-topweddingdayjp-linear-spring-wood-bone: linear-gradient(180deg, rgba(247, 247, 240, 1.00) 0%,rgba(235, 214, 202, 1.00) 100%);
+    --sample-topweddingdayjp-linear-chalky-tonys-pink: linear-gradient(141.73deg, rgba(239, 213, 158, 1.00) 0%,rgba(226, 152, 134, 1.00) 100%);
+    --sample-topweddingdayjp-cape-cod: #3c4043;
+    --sample-topweddingdayjp-linear-chalky-tonys-pink: linear-gradient(101deg, rgba(239, 213, 158, 1.00) 0%,rgba(226, 152, 134, 1.00) 100%);
+  
+    /* Fonts */
+    --sample-topweddingdayjp-jomolhari-regular-77-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-77-font-size: 77px;
+    --sample-topweddingdayjp-jomolhari-regular-77-line-height: 77px;
+    --sample-topweddingdayjp-jomolhari-regular-77-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-77-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-27-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-27-font-size: 27px;
+    --sample-topweddingdayjp-jomolhari-regular-27-line-height: 43.2px;
+    --sample-topweddingdayjp-jomolhari-regular-27-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-27-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-58-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-58-font-size: 58px;
+    --sample-topweddingdayjp-jomolhari-regular-58-line-height: 58px;
+    --sample-topweddingdayjp-jomolhari-regular-58-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-58-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-52-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-52-font-size: 52px;
+    --sample-topweddingdayjp-jomolhari-regular-52-line-height: 52px;
+    --sample-topweddingdayjp-jomolhari-regular-52-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-52-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-20-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-20-font-size: 20px;
+    --sample-topweddingdayjp-jomolhari-regular-20-line-height: 32px;
+    --sample-topweddingdayjp-jomolhari-regular-20-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-20-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-18-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-18-font-size: 18px;
+    --sample-topweddingdayjp-jomolhari-regular-18-line-height: 28.8px;
+    --sample-topweddingdayjp-jomolhari-regular-18-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-18-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-50-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-50-font-size: 50px;
+    --sample-topweddingdayjp-jomolhari-regular-50-line-height: 50px;
+    --sample-topweddingdayjp-jomolhari-regular-50-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-50-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-38-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-38-font-size: 38px;
+    --sample-topweddingdayjp-jomolhari-regular-38-line-height: 38px;
+    --sample-topweddingdayjp-jomolhari-regular-38-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-38-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-35-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-35-font-size: 35px;
+    --sample-topweddingdayjp-jomolhari-regular-35-line-height: 35px;
+    --sample-topweddingdayjp-jomolhari-regular-35-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-35-font-style: normal;
+    --sample-topweddingdayjp-jomolhari-regular-13-font-family: Jomolhari-Regular, sans-serif;
+    --sample-topweddingdayjp-jomolhari-regular-13-font-size: 13px;
+    --sample-topweddingdayjp-jomolhari-regular-13-line-height: 20.8px;
+    --sample-topweddingdayjp-jomolhari-regular-13-font-weight: 400;
+    --sample-topweddingdayjp-jomolhari-regular-13-font-style: normal;
+    --sample-topweddingdayjp-cormorant-garamond-regular-35-font-family: CormorantGaramond-Regular, sans-serif;
+    --sample-topweddingdayjp-cormorant-garamond-regular-35-font-size: 35px;
+    --sample-topweddingdayjp-cormorant-garamond-regular-35-line-height: 56px;
+    --sample-topweddingdayjp-cormorant-garamond-regular-35-font-weight: 400;
+    --sample-topweddingdayjp-cormorant-garamond-regular-35-font-style: normal;
+    --sample-topweddingdayjp-cormorant-garamond-regular-25-font-family: CormorantGaramond-Regular, sans-serif;
+    --sample-topweddingdayjp-cormorant-garamond-regular-25-font-size: 25px;
+    --sample-topweddingdayjp-cormorant-garamond-regular-25-line-height: 40px;
+    --sample-topweddingdayjp-cormorant-garamond-regular-25-font-weight: 400;
+    --sample-topweddingdayjp-cormorant-garamond-regular-25-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-size: 18px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-line-height: 32.4px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-size: 18px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-line-height: 28.8px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-18-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-bold-18-font-family: NotoSerifJp-Bold, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-bold-18-font-size: 18px;
+    --sample-topweddingdayjp-noto-serif-jp-bold-18-line-height: 28.8px;
+    --sample-topweddingdayjp-noto-serif-jp-bold-18-font-weight: 700;
+    --sample-topweddingdayjp-noto-serif-jp-bold-18-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-size: 14px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-line-height: 22.4px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-12-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-12-font-size: 12px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-12-line-height: 19.2px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-12-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-12-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-semibold-20-font-family: NotoSerifJp-SemiBold, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-semibold-20-font-size: 20px;
+    --sample-topweddingdayjp-noto-serif-jp-semibold-20-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-serif-jp-semibold-20-font-weight: 600;
+    --sample-topweddingdayjp-noto-serif-jp-semibold-20-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-underline-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-underline-font-size: 14px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-underline-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-underline-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-underline-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-size: 14px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-14-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-size: 13px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-size: 13px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-13-font-style: normal;
+    --sample-topweddingdayjp-noto-serif-jp-regular-125-font-family: NotoSerifJp-Regular, sans-serif;
+    --sample-topweddingdayjp-noto-serif-jp-regular-125-font-size: 12.5px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-125-line-height: 22.46px;
+    --sample-topweddingdayjp-noto-serif-jp-regular-125-font-weight: 400;
+    --sample-topweddingdayjp-noto-serif-jp-regular-125-font-style: normal;
+    --sample-topweddingdayjp-roboto-medium-14-font-family: Roboto-Medium, sans-serif;
+    --sample-topweddingdayjp-roboto-medium-14-font-size: 14px;
+    --sample-topweddingdayjp-roboto-medium-14-line-height: normal;
+    --sample-topweddingdayjp-roboto-medium-14-font-weight: 500;
+    --sample-topweddingdayjp-roboto-medium-14-font-style: normal;
+    --sample-topweddingdayjp-roboto-regular-12-font-family: Roboto-Regular, sans-serif;
+    --sample-topweddingdayjp-roboto-regular-12-font-size: 12px;
+    --sample-topweddingdayjp-roboto-regular-12-line-height: normal;
+    --sample-topweddingdayjp-roboto-regular-12-font-weight: 400;
+    --sample-topweddingdayjp-roboto-regular-12-font-style: normal;
+    --sample-topweddingdayjp-roboto-regular-10-font-family: Roboto-Regular, sans-serif;
+    --sample-topweddingdayjp-roboto-regular-10-font-size: 10px;
+    --sample-topweddingdayjp-roboto-regular-10-line-height: 14px;
+    --sample-topweddingdayjp-roboto-regular-10-font-weight: 400;
+    --sample-topweddingdayjp-roboto-regular-10-font-style: normal;
+    --sample-topweddingdayjp-noto-sans-jp-demilight-16-font-family: NotoSansJp-DemiLight, sans-serif;
+    --sample-topweddingdayjp-noto-sans-jp-demilight-16-font-size: 16px;
+    --sample-topweddingdayjp-noto-sans-jp-demilight-16-line-height: 25.6px;
+    --sample-topweddingdayjp-noto-sans-jp-demilight-16-font-weight: 400;
+    --sample-topweddingdayjp-noto-sans-jp-demilight-16-font-style: normal;
+  
+    /* Effects */
+  
   }
- 
+  
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -65,14 +210,5 @@
     --destructive-foreground: 210 40% 98%;
  
     --ring: hsl(212.7,26.8%,83.9);
-  }
-}
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }

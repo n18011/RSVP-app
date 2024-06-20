@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
+  import type { PageData } from "./$types.js";
+  import InvitationForm from "./InvitationForm.svelte";
+  export let data: PageData;
   let className = "";
   export { className as class };
-	export let data;
 </script>
 
 <div class="{'self-stretch shrink-0 h-[4402.64px] relative ' + className}">
@@ -1065,13 +1067,14 @@
             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
           "
         >
-          <div
+          <button
             class="text-sample-topweddingdayjp-nero text-center font-sample-topweddingdayjp-noto-sans-jp-demilight-16-font-family text-sample-topweddingdayjp-noto-sans-jp-demilight-16-font-size leading-sample-topweddingdayjp-noto-sans-jp-demilight-16-line-height font-sample-topweddingdayjp-noto-sans-jp-demilight-16-font-weight relative flex items-center justify-center"
           >
             招待状に回答する
-          </div>
+          </button>
 					
         </div>
+				<InvitationForm data={data.form} />
 				<section>
 					<ul>
 						{#each data.countries as country}

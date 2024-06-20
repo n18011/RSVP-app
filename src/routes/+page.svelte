@@ -1,6 +1,7 @@
 <script>
   let className = "";
   export { className as class };
+	export let data;
 </script>
 
 <div class="{'self-stretch shrink-0 h-[4402.64px] relative ' + className}">
@@ -1075,4 +1076,13 @@
   </div>
 </div>
 
-<style></style>
+<section>
+	<ul>
+		{#each data.countries as country}
+		<li>{country.name}</li>
+		{/each}
+	</ul>
+</section>
+
+<style>
+</style>

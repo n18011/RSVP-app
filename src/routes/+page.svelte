@@ -1070,19 +1070,20 @@
           >
             招待状に回答する
           </div>
+					
         </div>
+				<section>
+					<ul>
+						{#each data.countries as country}
+						<li>{country.name}</li>
+						{/each}
+					</ul>
+				</section>
       </div>
     </div>
   </div>
 </div>
 
-<section>
-	<ul>
-		{#each data.countries as country}
-		<li>{country.name}</li>
-		{/each}
-	</ul>
-</section>
 
 <style>
 </style>
